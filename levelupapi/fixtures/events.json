@@ -3,33 +3,44 @@
       "model": "levelupapi.event",
       "pk": 1,
       "fields": {
-          "organizer": 1,
-          "description": "Welcome To at lunch",
-          "game": 1,
-          "date": "2021-10-04",
-          "time": "12:00"
-      }
+        "organizer": 1,
+        "game": 1,
+        "description": "Welcome To at lunch",
+        "date": "2021-10-04",
+        "time": "12:00:00"
+    }
   },
   {
       "model": "levelupapi.event",
       "pk": 2,
       "fields": {
-          "organizer": 1,
-          "description": "Friday night Settlers and drinks",
-          "game": 2,
-          "date": "2021-08-14",
-          "time": "19:30"
-      }
+        "organizer": 1,
+        "game": 2,
+        "description": "Friday night Settlers and drinks",
+        "date": "2021-08-14",
+        "time": "19:30:00"
+    }
   },
   {
       "model": "levelupapi.event",
       "pk": 3,
       "fields": {
-          "organizer": 1,
-          "description": "Vale of the Frost King campaign. All weekend.",
-          "game": 3,
-          "date": "2021-04-20",
-          "time": "8:00"
-      }
-  }
+        "organizer": 1,
+        "game": 3,
+        "description": "Vale of the Frost King campaign. All weekend.",
+        "date": "2021-04-20",
+        "time": "08:00:00"
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 4,
+    "fields": {
+        "organizer": 1,
+        "game": 2,
+        "description": "Lightning round welcome to session. Cards will be turned every minute. Drinking involved.",
+        "date": "2020-11-11",
+        "time": "17:30:00"
+    }
+}
 ]
