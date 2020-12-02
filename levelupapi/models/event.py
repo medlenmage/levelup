@@ -11,11 +11,13 @@ class Event(models.Model):
     date = models.DateField()
     time = models.TimeField()
 
-    participants = models.ManyToManyField(
-        "Gamer",
-        related_name="participant_events",
-        related_query_name="participant_event"
-    )
-
     def __str__(self):
         return self.description
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
