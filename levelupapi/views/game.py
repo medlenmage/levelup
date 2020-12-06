@@ -13,7 +13,6 @@ class Games(ViewSet):
 
     def create(self, request):
         """Handle POST operations
-
         Returns:
             Response -- JSON serialized game instance
         """
@@ -35,7 +34,7 @@ class Games(ViewSet):
         # whose `id` is what the client passed as the
         # `gameTypeId` in the body of the request.
         gametype = GameType.objects.get(pk=request.data["gameTypeId"])
-        game.gametype = gametype
+        game.game_type = gametype
 
         # Try to save the new game to the database, then
         # serialize the game instance as JSON, and send the
@@ -73,7 +72,6 @@ class Games(ViewSet):
 
     def update(self, request, pk=None):
         """Handle PUT requests for a game
-
         Returns:
             Response -- Empty body with 204 status code
         """
