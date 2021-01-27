@@ -20,7 +20,7 @@ from django.urls import path
 from levelupapi.views import register_user, login_user
 from rest_framework import routers
 from levelupapi.views.gametype import GameTypes
-from levelupapi.views import Games, GameTypes, Events, Profile
+from levelupapi.views.profile import Profile
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypes, 'gametype')
